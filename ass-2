@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int n, cube, r, sum=0, x;
+	printf("enter any number");
+	scanf("%d", &n);
+	x=n;
+	while(n!=0)
+	{
+		r = n%10;
+		cube = pow(r, 3);	
+		sum = sum+cube;
+		n = n/10;
+	}
+	if(sum==x)
+	printf("%d is armstrong number");
+	else
+	printf("%d is not armstrong number");
+}
